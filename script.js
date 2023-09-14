@@ -1,1 +1,1 @@
-hiii
+document.createElement(img1);
