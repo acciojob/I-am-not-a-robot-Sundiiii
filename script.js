@@ -13,3 +13,14 @@ test4.addEventListener("click", changeborder);
  function changeborder(x){
 x.target.style.border = "5px solid red";  
   }
+var imgArray = ["test", "test1, "test2","test3","test"]
+
+function randomBg() {
+    x = Math.random()
+    y = Math.round(x * 10)
+    if (imgArray[y] != undefined) {
+        document.getElementById("blah").style.backgroundImage = "url('" + imgArray[y] + "')"
+    } else {
+            document.getElementById("blah").style.backgroundImage = "url('default.jpg')"
+    }    
+}
